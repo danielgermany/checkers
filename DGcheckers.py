@@ -1,10 +1,7 @@
 from graphics import *
+from DGcheckersFunc import is_whole
 
 windowSize = 500
-
-def is_whole(n):
-    if n % 1 == 0: return True
-    else: return False
 
 checkersWin = GraphWin("Checkers", windowSize,windowSize)
 checkersWin.setCoords(0,0, windowSize,windowSize)
