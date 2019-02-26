@@ -1,6 +1,5 @@
 from graphics import *
 
-boardSize = 8
 windowSize = 500
 
 def is_whole(n):
@@ -10,8 +9,8 @@ def is_whole(n):
 checkersWin = GraphWin("Checkers", windowSize,windowSize)
 checkersWin.setCoords(0,0, windowSize,windowSize)
 
-for y in range(boardSize):
-    for x in range(boardSize):
+for y in range(8):
+    for x in range(8):
 
         checkerRect = Rectangle(Point((windowSize/10) * (x + 1),(windowSize/10) * (y + 1)),
                                 Point((windowSize/10) * (x + 2),(windowSize/10) * (y + 2)))
